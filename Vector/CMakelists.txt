@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.2)
 project(vector LANGUAGES C)
-file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/*.c)
-file(GLOB HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/lib/*.h)
+file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c)
+file(GLOB HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/include/*.h)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 add_library(vector SHARED ${SRC} ${HEADERS})
@@ -10,4 +10,3 @@ set_target_properties(vector PROPERTIES
     ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/lib
 )
 endif()
-add_subdirectory(src)
