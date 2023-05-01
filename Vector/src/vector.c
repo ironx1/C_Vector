@@ -1,7 +1,7 @@
 #ifdef _WIN32
 #include "..\include\vector.h"
 #else
-#include "..\include/vector.h"
+#include "../include/vector.h"
 #endif
 #include <stdlib.h>
 
