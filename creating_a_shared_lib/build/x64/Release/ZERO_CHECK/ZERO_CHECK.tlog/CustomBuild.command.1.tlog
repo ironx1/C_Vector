@@ -1,0 +1,10 @@
+^C:\USERS\AKAAN\CLANGPROJECTS\CREATING_A_SHARED_LIB\BUILD\CMAKEFILES\A9A5C5A9683C0E9D81D7F89AB3407CDE\GENERATE.STAMP.RULE
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SC:/Users/akaan/clangProjects/creating_a_shared_lib -BC:/Users/akaan/clangProjects/creating_a_shared_lib/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/akaan/clangProjects/creating_a_shared_lib/build/matkut.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

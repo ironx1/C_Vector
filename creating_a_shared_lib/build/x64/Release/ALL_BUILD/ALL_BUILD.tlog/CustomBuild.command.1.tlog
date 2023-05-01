@@ -1,0 +1,10 @@
+^C:\USERS\AKAAN\CLANGPROJECTS\CREATING_A_SHARED_LIB\CMAKELISTS.TXT
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SC:/Users/akaan/clangProjects/creating_a_shared_lib -BC:/Users/akaan/clangProjects/creating_a_shared_lib/build --check-stamp-file C:/Users/akaan/clangProjects/creating_a_shared_lib/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,4 @@
+C:/Users/akaan/clangProjects/creating_a_shared_lib/build/CMakeFiles/matkut.dir
+C:/Users/akaan/clangProjects/creating_a_shared_lib/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/akaan/clangProjects/creating_a_shared_lib/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/akaan/clangProjects/creating_a_shared_lib/build/test/CMakeFiles/test.dir
