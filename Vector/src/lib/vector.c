@@ -1,4 +1,8 @@
-#include "vector.h"
+#ifdef _WIN32
+#include "include\vector.h"
+#else
+#include "include/vector.h"
+#endif
 #include <stdlib.h>
 
 #define mem_allocM(type, size) (type *)malloc(sizeof(type) * (size))

@@ -1,6 +1,6 @@
-#if !defined(VECTOR_VECTOR_UTILS_H)
+#ifndef VECTOR_VECTOR_UTILS_H
 #define VECTOR_VECTOR_UTILS_H
-
+#include <string.h>
 #define template(typename) \
     typedef void *typename;
 
@@ -16,13 +16,15 @@
         return 0;                              \
     }
 
-typedef int (*funCompare)(T, T);
+typedef int (*funCompare)(void *, void *);
 
-int compare_str(void *obj1, void *obj2)
-{
-    int r = strcmp((char *)obj1, (char *)obj2);
-    if (r == 0)
-        return 1;
-    return 0;
-}
+#define compareStrM                                 \
+    int compare_str(void *obj1, void *obj2)         \
+    {                                               \
+        int r = strcmp((char *)obj1, (char *)obj2); \
+        if (r == 0)                                 \
+            return 1;                               \
+        return 0;                                   \
+    }
+
 #endif // VECTOR_VECTOR_UTILS_H

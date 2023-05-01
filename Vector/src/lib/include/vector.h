@@ -2,6 +2,7 @@
 #define VECTOR_VECTOR_H
 
 #include "vector_utils.h"
+
 typedef struct vector Vector;
 
 template(T) struct vector
