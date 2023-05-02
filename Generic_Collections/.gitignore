@@ -1,6 +1,4 @@
 build/
 bin/
-run.bat
-src/tests/
-src/CMakeLists.txt
+run_test_ll.bat
 lib/
